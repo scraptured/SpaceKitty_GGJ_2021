@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Whooshing Wind -- 1.wav-9e480bfd5dd0070a944328913d8d696b.sample"
+
+[deps]
+
+source_file="res://AssetsSK/Sound Effects/Effects/Wind/Whooshing Wind -- 1.wav"
+dest_files=[ "res://.import/Whooshing Wind -- 1.wav-9e480bfd5dd0070a944328913d8d696b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

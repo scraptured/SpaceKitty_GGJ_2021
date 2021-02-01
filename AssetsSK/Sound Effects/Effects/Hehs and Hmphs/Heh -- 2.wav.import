@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Heh -- 2.wav-c971b45938df553dbddb172f8a655746.sample"
+
+[deps]
+
+source_file="res://AssetsSK/Sound Effects/Effects/Hehs and Hmphs/Heh -- 2.wav"
+dest_files=[ "res://.import/Heh -- 2.wav-c971b45938df553dbddb172f8a655746.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

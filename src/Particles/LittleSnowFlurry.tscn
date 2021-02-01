@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="ParticlesMaterial" id=1]
+emission_shape = 2
+emission_box_extents = Vector3( 100, 1, 1 )
+flag_disable_z = true
+gravity = Vector3( -100, 98, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+tangential_accel = 40.0
+tangential_accel_random = 1.0
+damping = 22.99
+damping_random = 1.0
+
+[node name="LittleSnowFlurry" type="Particles2D"]
+amount = 80
+lifetime = 8.0
+preprocess = 5.0
+visibility_rect = Rect2( -1800, -100, 1800, 800 )
+process_material = SubResource( 1 )

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Snow Crunch -- hard -- 5.wav-977e6f16c7fd5901af0181d02b08381b.sample"
+
+[deps]
+
+source_file="res://AssetsSK/Sound Effects/Effects/Snow Crunch/Snow Crunch -- hard -- 5.wav"
+dest_files=[ "res://.import/Snow Crunch -- hard -- 5.wav-977e6f16c7fd5901af0181d02b08381b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

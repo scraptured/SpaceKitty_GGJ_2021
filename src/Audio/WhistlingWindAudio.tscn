@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/Audio/WhistlingWindAudio.gd" type="Script" id=1]
+[ext_resource path="res://AssetsSK/Sound Effects/Effects/Wind/Whistling Wind -- 1.wav" type="AudioStream" id=2]
+
+
+[node name="WhistlingWindAudio" type="AudioStreamPlayer2D"]
+position = Vector2( 2427.81, 139.504 )
+stream = ExtResource( 2 )
+volume_db = -80.0
+attenuation = 2.63902
+script = ExtResource( 1 )

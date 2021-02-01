@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="ParticlesMaterial" id=1]
+emission_shape = 2
+emission_box_extents = Vector3( 500, 25, 1 )
+flag_disable_z = true
+gravity = Vector3( -25, 50, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+linear_accel = 100.0
+tangential_accel_random = 1.0
+scale = 2.0
+color = Color( 0.662745, 0.647059, 0.764706, 1 )
+
+[node name="SnowFlurry" type="Particles2D"]
+amount = 1000
+lifetime = 5.0
+preprocess = 10.0
+visibility_rect = Rect2( -1000, 0, 2000, 2000 )
+process_material = SubResource( 1 )

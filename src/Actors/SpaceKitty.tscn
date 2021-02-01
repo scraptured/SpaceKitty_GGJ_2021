@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://src/Actors/Cat.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/Actors/SpaceKitty.gd" type="Script" id=2]
+[ext_resource path="res://AssetsSK/Sound Effects/Effects/Cat Meows/Meow -- 1.wav" type="AudioStream" id=3]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 17.438
+height = 23.0492
+
+[node name="SpaceKitty" type="Area2D"]
+collision_layer = 2
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" parent="." instance=ExtResource( 1 )]
+frame = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.33371, 1.66855 )
+shape = SubResource( 1 )
+
+[node name="MeowPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+volume_db = 5.0
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="mouse_entered" from="." to="." method="_on_SpaceKitty_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_SpaceKitty_mouse_exited"]
+[connection signal="finished" from="MeowPlayer" to="." method="_on_MeowPlayer_finished"]

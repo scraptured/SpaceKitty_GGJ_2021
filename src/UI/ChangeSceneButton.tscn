@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/UI/PlayButton.gd" type="Script" id=1]
+[ext_resource path="res://src/Audio/ButtonClickPlayer.tscn" type="PackedScene" id=2]
+
+[node name="ChangeSceneButton" type="Button"]
+margin_right = 139.0
+margin_bottom = 20.0
+text = "Play"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+next_scene_path = "res://src/Levels/Level01.tscn"
+
+[node name="ButtonClickPlayer" parent="." instance=ExtResource( 2 )]
+[connection signal="button_down" from="." to="." method="_on_button_down"]
+[connection signal="button_up" from="." to="." method="_on_button_up"]
